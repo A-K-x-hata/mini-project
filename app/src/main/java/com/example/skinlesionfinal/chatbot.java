@@ -31,7 +31,7 @@ public class chatbot extends AppCompatActivity {
     private ImageButton sendButton;
     private List<Message> messageList;
     private MessageAdapter messageAdapter;
-    private GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "AIzaSyCSZsQlFTeey7GcGhCe0EeMCdbbccWG2K4");
+    private GenerativeModel generativeModel = new GenerativeModel("gemini-pro", "");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
