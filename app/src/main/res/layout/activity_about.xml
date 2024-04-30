@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/skin">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Our Project"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our skin lesion classification app utilizes deep learning models to accurately identify and classify different types of skin lesions, such as melanoma, basal cell carcinoma, and others. Users can simply upload a skin image, and the app provides a quick diagnosis, along with information on whether the lesion is cancerous. This app aims to assist users in early detection and prompt medical consultation, potentially saving lives."
+        android:textSize="18sp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textViewDevelopers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by: Apeksha and Akshata"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewDescription"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
