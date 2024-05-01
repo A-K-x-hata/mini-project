@@ -30,6 +30,7 @@ public class home_activity extends AppCompatActivity {
     Button camera, gallery;
     ImageView imageView;
     TextView result;
+    TextView result2;
     int imageSize = 32;
 
     @Override
@@ -41,6 +42,7 @@ public class home_activity extends AppCompatActivity {
         gallery = findViewById(R.id.button1forhome);
 
         result = findViewById(R.id.result);
+        result2 = findViewById(R.id.result2);
         imageView = findViewById(R.id.imageView1);
 
         camera.setOnClickListener(new View.OnClickListener() {
@@ -93,12 +95,24 @@ public class home_activity extends AppCompatActivity {
                 }
             }
 
-            // Decode the predicted class
             String[] classes = {"akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"};
+            String[] descriptions = {
+                    "Akiec: Actinic keratosis is a rough, scaly patch on the skin that develops from years of exposure to the sun.",
+                    "Bcc: Basal cell carcinoma is a type of skin cancer that begins in the basal cells.",
+                    "Bkl: Benign keratosis-like lesions are skin growths that resemble benign keratosis, which is a non-cancerous skin condition.",
+                    "Df: Dermatofibroma is a common skin growth that usually forms on the lower legs of adults.",
+                    "Mel: Melanoma is a serious type of skin cancer that begins in the melanocytes.",
+                    "Nv: Melanocytic nevi are moles, which are common skin growths that develop when pigment cells (melanocytes) grow in clusters.",
+                    "Vasc: Vascular lesions are skin conditions that are caused by abnormal blood vessels."
+            };
             String predictedClassName = classes[maxIndex];
+            String predictedClassDescription = descriptions[maxIndex];
 
-            // Display the result
+// Display the result
             result.setText("Predicted Class: " + predictedClassName);
+            result2.setText("Description: " + predictedClassDescription);
+
+
 
         } catch (IOException e) {
             // TODO Handle the exception
