@@ -37,25 +37,12 @@ public class home_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        camera = findViewById(R.id.button2forhome);
         gallery = findViewById(R.id.button1forhome);
 
         result = findViewById(R.id.result);
         result2 = findViewById(R.id.result2);
         imageView = findViewById(R.id.imageView1);
 
-        camera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                    Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivityForResult(cameraIntent, 3);
-                } else {
-                    requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
-                }
-            }
-        });
 
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override

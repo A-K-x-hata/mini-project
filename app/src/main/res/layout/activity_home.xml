@@ -24,23 +24,7 @@
         android:layout_marginEnd="32dp"/>
 
     <!-- Camera Button -->
-    <Button
-        android:id="@+id/button2forhome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/button1forhome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
 
-        android:padding="16dp"
-        android:text="Take Picture"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
     <!-- Image View -->
     <ImageView
